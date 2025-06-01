@@ -14,12 +14,16 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
         <link rel="stylesheet" href="style.css">
+        <script src="./main.js" defer></script>
+        
     <title>QuickList - Melissa Aquino</title>
     
 </head>
 
 <body>
     <header>
+
+        
 
         <img src="./assets/logo.png" alt="logo quicklist">
 
@@ -33,7 +37,7 @@
     <main>
         <section class="add-item">
             <input type="text" placeholder=" adcione um novo item" id="item">
-            <button> Adicionar item</button>
+            <button onclick="addItem()"> Adicionar item</button>
         </section>
 
         <section class="list">
