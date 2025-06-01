@@ -1,81 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
-    />
-
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
-   
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
     <title>QuickList - Melissa Aquino</title>
+    
 </head>
-<body>
 
-       <header>
+<body>
+    <header>
+
         <img src="./assets/logo.png" alt="logo quicklist">
 
         <button>
             <i class="ph ph-arrow-left"></i>
-            voltar
-         </button>
+            Voltar
+        </button>
 
-         <h1>Compras da Semana</h1>
+        <h1>Compras da Semana</h1>
     </header>
-<main>
-  <section class="add-item">
- <input type="text" placeholder=" adcione um novo item" id="item">
- <button> Adicionar Item</button>
-  </section>
-  
-  <section class="list">
-     
- <div class="item">
- <input type="checkbox" name="list" id="item-1">
- <div class="custom-checkbox">
-    <img src="./assets/checked.svg" alt="checked">
+    <main>
+        <section class="add-item">
+            <input type="text" placeholder=" adcione um novo item" id="item">
+            <button> Adicionar item</button>
+        </section>
 
-     <label for="item-1">pão de forma</label>
+        <section class="list">
+            <div class="item">  
+                <div>
+                    <input type="checkbox" name="list" id="item-1">
+                    <div class="custom-checkbox">
+                        <img src="./assets/checked.svg" alt="checked">
+                    </div>
+                    <label for="item-1">Pão de forma</label>
+                </div>
 
-    <div class="item">
-        <input type="checkbox" name="list" id="item-1">
-        <div class="custom-checkbox">
-           <img src="./assets/checked.svg" alt="checked">
-       
-           <label for="item-2">café</label>
- </div>
- <button>
-    <img src="./assets/trash-icon.svg" alt="trash icon">
- </button>
- </div>
 
-  </section>
+                <button>
+                    <img src="./assets/trash-icon.svg" alt="trash icon">
+                </button>
+            </div>
+            <div class="item">  
+                <div>
+                    <input type="checkbox" name="list" id="item-1">
+                    <div class="custom-checkbox">
+                        <img src="./assets/checked.svg" alt="checked">
+                    </div>
+                    <label for="item-2">Café</label>
+                </div>
+                <button>
+                    
+                    <img src="./assets/trash-icon.svg" alt="trash icon">
+                </button>
+            </div>
+            <div class="item">  
+                <div>
+                    <input type="checkbox" name="list" id="item-1">
+                    <div class="custom-checkbox">
+                        <img src="./assets/checked.svg" alt="checked">
+                    </div>
+                    <label for="item-3">Leite</label>
+                </div>
+                <button>
+                    <img src="./assets/trash-icon.svg" alt="trash icon">
+                </button>
+            </div>
+        </section>
 
-      <div class="warning">
-     <div>
-       <i class="ph ph-warning-circle ph-fill"></i>
-       <span> O item foi removido da lista</span>
-     </div>
-     <button>
-       <i class="ph ph-x"></i>
-    </button>
-    
-  </div>
-   </main>
-
-    
+        <div class="warning">
+            <div>
+                <i class="ph ph-warning-circle ph-fill"></i>
+                <span> O item foi removido da lista</span>
+            </div>
+            <button>
+                <i class="ph ph-x"></i>
+            </button>
+        </div>
+    </main>
 </body>
-</html>
